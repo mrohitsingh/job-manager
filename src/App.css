@@ -1,0 +1,139 @@
+/* .App {
+    text-align: center;
+} */
+
+h1,
+h2,
+h3 {
+    text-align: center;
+    margin: 15px;
+}
+
+h4 {
+    margin: 10px;
+}
+
+.jobs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 10px 5px 27px;
+    width: 95vw;
+}
+
+.job-manager,
+.job-preview {
+    border: 1px solid #363636;
+    padding: 10px;
+}
+
+.job-manager {
+    width: 55%;
+}
+
+.job-preview {
+    width: 45%;
+    margin-left: 15px;
+    word-wrap: break-word;
+}
+
+p {
+    margin: 5px 0;
+    border: 1px solid #f5f4f4;
+    padding: 10px;
+}
+
+.live-preview p b {
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+.input {
+    margin-left: 10px;
+}
+
+.select-experience {
+    margin-left: 10px;
+}
+
+.qualification {
+    margin-left: 10px;
+}
+
+.form-control,
+.form-select {
+    border: 1px solid #000000;
+}
+
+.form-control {
+    padding: 0, 10px;
+}
+
+input[type="checkbox"] {
+    border: 1px solid #000000;
+}
+
+.form-check-label {
+    text-decoration: underline;
+}
+
+.textarea {
+    width: 95%;
+    margin-left: 25px;
+}
+
+.cta {
+    margin-left: 10px;
+}
+
+.select-sec,
+.experience {
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+    .jobs {
+        display: flex;
+        flex-direction: column;
+        width: 95vw;
+        margin-left: 10px;
+    }
+    .job-manager,
+    .job-preview {
+        width: 100%;
+    }
+    .job-preview {
+        margin: 8px 0;
+    }
+    .input {
+        width: 80vw;
+    }
+    .textarea {
+        margin-left: 25px;
+    }
+    .experience {
+        flex-direction: column;
+    }
+    .experience .left {
+        margin-bottom: 10px;
+    }
+    .experience .right {
+        margin: 0 19px 0 16px;
+    }
+    .right .input {
+        width: 39.5vw;
+    }
+    .select-sec .left,
+    .select-sec .right {
+        width: 30vw;
+    }
+    .select-sec .right {
+        margin-right: 60px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .experience .right {
+        margin: 0 6px 0 16px;
+    }
+}
