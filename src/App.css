@@ -24,6 +24,7 @@ h4 {
 .job-manager,
 .job-preview {
     border: 1px solid #363636;
+    border-radius: 8px;
     padding: 10px;
 }
 
@@ -40,7 +41,66 @@ h4 {
 p {
     margin: 5px 0;
     border: 1px solid #f5f4f4;
+    border-radius: 8px;
     padding: 10px;
+}
+
+.jobs-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: 1px solid #5a5a5a;
+    border-radius: 8px;
+    margin: 25px 0;
+    padding: 10px;
+    width: 60vw;
+}
+
+.btn-view {
+    margin-right: 10px;
+}
+
+.job-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: 1px solid #5a5a5a;
+    border-radius: 8px;
+    margin: 25px 0;
+    width: 60vw;
+}
+
+.jobs-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.job {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.jobs-item p {
+    margin: 5px 0;
+    border: 0;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.job-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.job-item p b {
+    padding-right: 25px;
 }
 
 .live-preview p b {
@@ -63,6 +123,7 @@ p {
 .form-control,
 .form-select {
     border: 1px solid #000000;
+    border-radius: 8px;
 }
 
 .form-control {
@@ -71,6 +132,7 @@ p {
 
 input[type="checkbox"] {
     border: 1px solid #000000;
+    border-radius: 8px;
 }
 
 .form-check-label {

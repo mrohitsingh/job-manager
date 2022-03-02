@@ -1,0 +1,20 @@
+{
+  "jobs": [
+    {
+      "id": 12,
+      "jobTitle": "React Developer Native",
+      "introduction": "Demo for Native",
+      "roles": "Front End For Native",
+      "experience": "0-5",
+      "minExperience": "Min",
+      "maxExperience": "Max",
+      "qualification": "B.S.(IT)",
+      "salaryRange": "23000",
+      "cta": "Hello World",
+      "company": "miniGyan",
+      "location": "Noida",
+      "workBasis": "Full Time",
+      "workMode": "5 Days week"
+    }
+  ]
+}

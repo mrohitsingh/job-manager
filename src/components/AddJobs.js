@@ -1,8 +1,20 @@
-import { Form } from "react-bootstrap";
+import { Form, Button } from "react-bootstrap";
 
 const AddJobs = (props) => {
   const {
+    handleCheckTitle,
+    handleCheckIntro,
+    handleCheckRole,
+    handleCheckExperience,
+    handleCheckQualification,
+    handleCheckSalary,
+    handleCheckCta,
+    handleCheckCompany,
+    handleCheckLocation,
+    handleCheckWorkBasis,
+    handleCheckWorkMode,
     handleChange,
+    handleSubmit,
     jobTitle,
     introduction,
     roles,
@@ -21,9 +33,14 @@ const AddJobs = (props) => {
   return (
     <div>
       <h1>Add new job</h1>
-      <Form>
+      <Form onSubmit={handleSubmit}>
         <Form.Group className="mb-3 d-flex align-items-center">
-          <Form.Check type="checkbox" />
+          <Form.Check
+            type="checkbox"
+            onChange={handleCheckTitle}
+            value={jobTitle}
+            name="jobTitle"
+          />
           <Form.Control
             type="text"
             className="job-title input"
@@ -38,8 +55,10 @@ const AddJobs = (props) => {
           <div className="d-flex">
             <Form.Check
               type="checkbox"
+              onChange={handleCheckIntro}
+              value={introduction}
               label="Introduction"
-              className="mr-3 check"
+              className="check"
             />
           </div>
           <Form.Control
@@ -53,7 +72,12 @@ const AddJobs = (props) => {
           />
         </Form.Group>
         <Form.Group className="mb-3">
-          <Form.Check type="checkbox" label="Roles and Responsibility " />
+          <Form.Check
+            type="checkbox"
+            onChange={handleCheckRole}
+            value={roles}
+            label="Roles and Responsibility "
+          />
           <Form.Control
             className="input textarea"
             as="textarea"
@@ -67,7 +91,11 @@ const AddJobs = (props) => {
 
         <Form.Group className="mb-3 experience d-flex">
           <div className="left d-flex align-items-center">
-            <Form.Check type="checkbox" />
+            <Form.Check
+              type="checkbox"
+              onChange={handleCheckExperience}
+              value={experience}
+            />
             <Form.Control
               type="text"
               className="job-title input"
@@ -107,7 +135,11 @@ const AddJobs = (props) => {
         </Form.Group>
 
         <Form.Group className="mb-3 d-flex align-items-center">
-          <Form.Check type="checkbox" />
+          <Form.Check
+            type="checkbox"
+            onChange={handleCheckQualification}
+            value={qualification}
+          />
           <Form.Control
             type="text"
             className="qualification input"
@@ -119,7 +151,11 @@ const AddJobs = (props) => {
         </Form.Group>
 
         <Form.Group className="mb-3 d-flex align-items-center">
-          <Form.Check type="checkbox" />
+          <Form.Check
+            type="checkbox"
+            onChange={handleCheckSalary}
+            value={salaryRange}
+          />
           <Form.Control
             type="text"
             className="job-title input"
@@ -131,7 +167,7 @@ const AddJobs = (props) => {
         </Form.Group>
 
         <Form.Group className="mb-3 d-flex align-items-center">
-          <Form.Check type="checkbox" />
+          <Form.Check type="checkbox" onChange={handleCheckCta} value={cta} />
           <Form.Control
             className="input cta"
             as="textarea"
@@ -144,7 +180,11 @@ const AddJobs = (props) => {
         </Form.Group>
 
         <Form.Group className="mb-3 d-flex align-items-center">
-          <Form.Check type="checkbox" />
+          <Form.Check
+            type="checkbox"
+            onChange={handleCheckCompany}
+            value={company}
+          />
           <Form.Control
             type="text"
             className="job-title input"
@@ -156,7 +196,11 @@ const AddJobs = (props) => {
         </Form.Group>
 
         <Form.Group className="mb-3 d-flex align-items-center">
-          <Form.Check type="checkbox" />
+          <Form.Check
+            type="checkbox"
+            onChange={handleCheckLocation}
+            value={location}
+          />
           <Form.Control
             type="text"
             className="job-title input"
@@ -169,7 +213,11 @@ const AddJobs = (props) => {
 
         <Form.Group className="mb-3 select-sec d-flex align-items-center">
           <div className="left d-flex  align-items-center">
-            <Form.Check type="checkbox" />
+            <Form.Check
+              type="checkbox"
+              onChange={handleCheckWorkBasis}
+              value={workBasis}
+            />
 
             <Form.Select
               aria-label="Default select example"
@@ -186,7 +234,11 @@ const AddJobs = (props) => {
             </Form.Select>
           </div>
           <div className="right d-flex align-items-center">
-            <Form.Check type="checkbox" />
+            <Form.Check
+              type="checkbox"
+              onChange={handleCheckWorkMode}
+              value={workMode}
+            />
             <Form.Select
               aria-label="Default select example"
               className="select-experience input"
@@ -200,6 +252,7 @@ const AddJobs = (props) => {
             </Form.Select>
           </div>
         </Form.Group>
+        <Button type="submit">Add New Job</Button>
       </Form>
     </div>
   );

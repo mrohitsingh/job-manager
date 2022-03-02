@@ -1,23 +1,29 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { Navbar, Container } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
+import { Navbar, Container, Nav } from "react-bootstrap";
 
 function NavBar() {
   return (
     <div>
-      <navLink>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/preview">Preview</Link>
-          </li>
-          <li>
-            <Link to="/jobs">Jobs</Link>
-          </li>
-        </ul>
-      </navLink>
+      <Navbar bg="primary" variant="dark" expand="lg">
+        <Container>
+          <Navbar.Brand href="/">Job Manager</Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="me-auto">
+              <NavLink className="nav-link" to="/">
+                Home
+              </NavLink>
+              <NavLink className="nav-link" to="/jobs">
+                Jobs
+              </NavLink>
+              <NavLink className="nav-link" to="/preview">
+                Preview
+              </NavLink>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
     </div>
   );
 }

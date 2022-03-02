@@ -1,5 +1,16 @@
 function Preview(props) {
   const {
+    checkedTitle,
+    checkedIntro,
+    checkedRole,
+    checkedExperience,
+    checkedQualification,
+    checkedSalary,
+    checkedCta,
+    checkedCompany,
+    checkedLocation,
+    checkedWorkBasis,
+    checkedWorkMode,
     pJobTitle,
     pIntroduction,
     pRoles,
@@ -20,44 +31,69 @@ function Preview(props) {
       <h3>Preview</h3>
       <hr />
       <div>
-        <h2>{pJobTitle}</h2>
-        <p>
-          <b>Introduction: </b>
-          {pIntroduction}
-        </p>
-        <p>
-          <b>Roles and Responsibility: </b>
-          {pRoles}
-        </p>
-        <p>
-          <b>Experience: </b>
-          {pExperience} - {pMinExperience} - {pMaxExperience}
-        </p>
+        {checkedTitle && <h2>{pJobTitle}</h2>}
+        {checkedIntro && (
+          <p>
+            <b>Introduction: </b>
+            {pIntroduction}
+          </p>
+        )}
+        {checkedRole && (
+          <p>
+            <b>Roles and Responsibility: </b>
+            {pRoles}
+          </p>
+        )}
+        {checkedExperience && (
+          <p>
+            <b>Experience: </b>
+            {pExperience} - {pMinExperience} - {pMaxExperience}
+          </p>
+        )}
 
-        <p>
-          <b>Qualification: </b>
-          {pQualification}
-        </p>
-        <p>
-          <b>Salary Range: </b>
-          {pSalaryRange}
-        </p>
-        <p>
-          <b>Call To Action: </b>
-          {pCta}
-        </p>
-        <p>
-          <b>Company: </b>
-          {pCompany}
-        </p>
-        <p>
-          <b>Location: </b>
-          {pLocation}
-        </p>
-        <p>
-          <b>Job Type: </b>
-          {pWorkBasis} , {pWorkMode}
-        </p>
+        {checkedQualification && (
+          <p>
+            <b>Qualification: </b>
+            {pQualification}
+          </p>
+        )}
+        {checkedSalary && (
+          <p>
+            <b>Salary Range: </b>
+            {pSalaryRange}
+          </p>
+        )}
+        {checkedCta && (
+          <p>
+            <b>Call To Action: </b>
+            {pCta}
+          </p>
+        )}
+        {checkedCompany && (
+          <p>
+            <b>Company: </b>
+            {pCompany}
+          </p>
+        )}
+        {checkedLocation && (
+          <p>
+            <b>Location: </b>
+            {pLocation}
+          </p>
+        )}
+
+        {checkedWorkBasis && (
+          <p>
+            <b>Job Type: </b>
+            {pWorkBasis}
+          </p>
+        )}
+        {checkedWorkMode && (
+          <p>
+            <b>Job Mode: </b>
+            {pWorkMode}
+          </p>
+        )}
       </div>
     </div>
   );
