@@ -1,4 +1,16 @@
-# Getting Started with Create React App
+# Getting Started with this repository
+
+Clone this project
+
+Install the package
+
+### `npm install`
+
+Now you can run :
+
+### `npm run start:dev`
+
+# Default ReadMe Data
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
