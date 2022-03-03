@@ -1,5 +1,6 @@
 import "./App.css";
 import Home from "./components/Home";
+import AddJobs from "./components/AddJobs";
 import Jobs from "./components/Jobs";
 import Preview from "./components/Preview";
 import Job from "./components/Job";
@@ -13,6 +14,7 @@ function App() {
         <NavBar />
         <Routes>
           <Route exact path="/" element={<Home />} />
+          <Route path="/addjob" element={<AddJobs />} />
           <Route exact path="/jobs" element={<Jobs />} />
           <Route exact path="/jobs/:id" element={<Job />} />
           <Route exact path="/preview" element={<Preview />} />

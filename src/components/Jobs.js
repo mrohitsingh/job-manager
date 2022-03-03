@@ -30,13 +30,12 @@ function Jobs() {
             <Link to={`/jobs/${job.id}`} className="btn btn-primary btn-view">
               View
             </Link>
-            <Link
-              to={`/jobs/${job.id}`}
+            <button
               onClick={() => deleteJob(job.id)}
               className="btn btn-danger"
             >
               Delete
-            </Link>
+            </button>
           </div>
         </div>
       ))}

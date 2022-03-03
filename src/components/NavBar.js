@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { Navbar, Container, Nav } from "react-bootstrap";
 
 function NavBar() {
@@ -19,6 +19,11 @@ function NavBar() {
               </NavLink>
               <NavLink className="nav-link" to="/preview">
                 Preview
+              </NavLink>
+            </Nav>
+            <Nav className="ml-auto">
+              <NavLink className="nav-link" variant="light" to="/addjob">
+                Add Job
               </NavLink>
             </Nav>
           </Navbar.Collapse>

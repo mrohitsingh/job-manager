@@ -222,6 +222,7 @@ const AddJobs = (props) => {
             <Form.Select
               aria-label="Default select example"
               className="select-experience input"
+              multiple
               name="workBasis"
               value={workBasis}
               onChange={(e) => handleChange(e)}
@@ -242,6 +243,7 @@ const AddJobs = (props) => {
             <Form.Select
               aria-label="Default select example"
               className="select-experience input"
+              multiple
               name="workMode"
               value={workMode}
               onChange={(e) => handleChange(e)}
